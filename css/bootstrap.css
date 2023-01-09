@@ -1384,7 +1384,7 @@ th {
 }
 
 html {
-    font-size: 10px;
+    font-size: 15px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
@@ -4248,9 +4248,9 @@ input[type=submit].btn-block {
     opacity: 1
 }
 
-/* .collapse {
+.collapse {
     display: none
-} */
+} 
 
 .collapse.in {
     display: block
