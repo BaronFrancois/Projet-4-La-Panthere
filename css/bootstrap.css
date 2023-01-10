@@ -4372,9 +4372,10 @@ tbody.collapse.in {
     text-decoration: none;
     cursor: not-allowed;
     background-color: transparent;
-    background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
-}
+    background-image: none
+   /* Il semblerait que cette ligne est utile principalement pour des versions de IE ancienne, c'est souvent utilisé pour du style comme des dégradés, ici il y est indiqué en =false, donc potentiellement un oubli. Je supprime pour valider le w3c */
+    /* filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)*/
+} 
 
 .open>.dropdown-menu {
     display: block
@@ -5123,8 +5124,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar-fixed-top .navbar-collapse {
     max-height: 340px
 }
-
-@media (max-device-width:480px) and (orientation:landscape) {
+/* même principe que pour la page css, je supprime tout simplement l'élement "device", ce qui semble ne pas perturber les élements au sein de la page et est validé par w3c */
+@media (max-width:480px) and (orientation:landscape) {
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
         max-height: 200px
