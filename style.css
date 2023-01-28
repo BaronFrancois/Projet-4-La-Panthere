@@ -7,7 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 /* Post soutenance */
-.hiddenLink {
+.social .hiddenLink {
     color: #FFFFFF!important;
 }
 p{
