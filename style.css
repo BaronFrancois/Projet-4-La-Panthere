@@ -7,8 +7,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 /* Post soutenance */
-.social .hiddenLink {
-    visibility: hidden;
+.hiddenLink {
+    color: #FFFFFF!important;
 }
 p{
     font-size: 15px;
